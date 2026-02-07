@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Signup Page</title>
+
+    <style>
+
+        body {
+            font-family: Arial;
+            background-image:url(./mountain.jpg);
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .signup-container {
+            background-image:url(./mountain.jpg);
+            background-size: cover;
+            color: white;
+            padding: 30px;
+            border-radius: 10px;
+            border: 2px solid yellowgreen;
+            width: 300px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+             background-image:
+            linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+            url("./mountain.jpg");
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid gray;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background: #43e97b;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #2ecc71;
+        }
+
+        .login-link {
+            text-align: center;
+            margin-top: 10px;
+        }
+        a {
+            text-decoration: none;
+            color: rgb(235, 224, 11);
+        }
+         .fb-btn {
+            background-color: green;
+        }
+        .gmail-btn{
+            background-color: gray;
+        }
+   
+
+
+    </style>
+
+</head>
+<body>
+
+    <!-- Signup Container -->
+    <div class="signup-container">
+
+        <h2>Signup</h2>
+
+        <!-- Signup Form -->
+        <form>
+
+            <!-- Name -->
+            <input 
+                type="text"
+                placeholder="Enter Name"
+                required
+            >
+
+            <!-- Email -->
+            <input 
+                type="email"
+                placeholder="Enter Email"
+                required
+            >
+
+            <!-- Password -->
+            <input 
+                type="password"
+                placeholder="Enter Password"
+                minlength="6"
+                required
+            >
+
+            <!-- Confirm Password -->
+            <input 
+                type="password"
+                placeholder="Confirm Password"
+                minlength="6"
+                required
+            >
+
+            <!-- Signup Button -->
+            <button type="submit"><b>Signup</b></button>
+
+        </form>
+
+        <!-- Login link -->
+        <div class="login-link">
+            Already have account?
+            <a href="login.html"><b>Login </b></a>
+        </div>
+        <p style="text-align: center;">-----------------or-----------------</p>
+         <div>
+            <button class="fb-btn" onclick="window.open('https://www.facebook.com','_blank')">
+              <b>Signup with Facebook</b> 
+            </button>
+
+             
+             <br> <br>
+
+            <button class="gmail-btn" onclick="window.open('https://accounts.google.com','_blank')">
+              <b>Signup with Gmail</b> 
+            </button>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login Page</title>
+
+    <!-- Internal CSS for styling -->
+    <style>
+
+        /* Body styling */
+        body {
+            font-family: Arial, sans-serif;
+            color:white; 
+            background-image: url(./mountain.jpg) ;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        /* Login container box */
+        .login-container {
+           
+           
+            padding: 30px;
+            border-radius: 10px;
+            border: 2px solid yellow;
+            width: 300px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+            background-image:
+            linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+            url("./mountain.jpg"); 
+            background-size: cover;
+        }
+
+        /* Heading */
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        /* Input fields */
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid gray;
+        }
+
+        /* Button styling */
+        button {
+            width: 100%;
+            padding: 10px;
+            background: #4facfe;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #00c6ff;
+        }
+
+        /* Signup link */
+        .signup-link {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        a {
+            text-decoration: none;
+            color: rgb(82, 248, 41);
+        }
+        .fb-btn {
+            background-color: green;
+        }
+        .gmail-btn{
+            background-color: gray;
+        }
+
+  
+
+    </style>
+
+</head>
+<body>
+
+    <!-- Login Form Container -->
+    <div class="login-container">
+
+        <h2>Login</h2>
+
+        <!-- Login Form -->
+        <form>
+
+            <!-- Email input with validation -->
+            <input 
+                type="email" 
+                placeholder="Enter Email"
+                required
+            >
+
+            <!-- Password input with validation -->
+            <input 
+                type="password" 
+                placeholder="Enter Password"
+                minlength="6"
+                required
+            >
+
+            <!-- Login button -->
+            <button type="submit"><b>Login</b></button>
+
+        </form>
+
+        <!-- Signup link -->
+        <div class="signup-link">
+            Don't have an account?
+            <a href="signup.html"><b>Signup</b></a>
+        </div>
+       <p style="text-align: center;">-----------------or-----------------</p> 
+        <div>
+            <button class="fb-btn" onclick="window.open('https://www.facebook.com','_blank')">
+              <b>Login with Facebook</b> 
+            </button>
+
+             
+             <br> <br>
+
+            <button class="gmail-btn" onclick="window.open('https://accounts.google.com','_blank')">
+              <b>Login with Gmail</b> 
+            </button>
+             
+        </div>
+    </div>
+
+</body>
+</html>
